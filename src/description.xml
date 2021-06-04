@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description xmlns="http://openoffice.org/extensions/description/2006" xmlns:d="http://openoffice.org/extensions/description/2006" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:l="http://libreoffice.org/extensions/description/2011">
+	<version value="0.1.0"/>
+	<identifier value="es.andaluh.AndaluhLibre"/>
+	<dependencies>
+		<l:LibreOffice-minimal-version d:name="LibreOffice 4.0" value="4.0"/>
+	</dependencies>
+	<registration>
+		<simple-license suppress-on-update="true" accept-by="admin">
+			<license-text lang="en" xlink:href="registration/lgpl-en.txt"/>
+		</simple-license>
+	</registration>
+	<publisher>
+		<name lang="en" xlink:href="https://andaluh.es">AndaluGeeks Team</name>
+	</publisher>
+	<display-name>
+		<name lang="en">Transcriptor AndaluhLibre</name>
+	</display-name>
+	<icon>
+		<default xlink:href="resources/AndaluhLibre_26.png"/>
+	</icon>
+	<extension-description>
+		<src lang="en" xlink:href="resources/description_en.txt"/>
+		<src lang="es" xlink:href="resources/description_es.txt"/>
+	</extension-description>
+</description>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dlg:window PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "dialog.dtd">
+<dlg:window xmlns:dlg="http://openoffice.org/2000/dialog" xmlns:script="http://openoffice.org/2000/script" 
+    dlg:id="TranscriptorDlg" dlg:left="99" dlg:top="81" dlg:width="140" dlg:height="200" 
+    dlg:closeable="true" dlg:moveable="true"
+    dlg:help-text="Trascribir a Andalûh (EPA)" dlg:title="Trascribir a Andalûh (EPA)" 
+>
+ <dlg:bulletinboard>
+  <dlg:titledbox dlg:id="Opt1Tiled" dlg:tab-index="4" dlg:left="5" dlg:top="5" dlg:width="60" dlg:height="55">
+   <dlg:title dlg:value="Elije Ç Z S H"/>
+  </dlg:titledbox>
+  <dlg:radiogroup>
+   <dlg:radio dlg:id="çeçeo" dlg:tab-index="5" dlg:left="10" dlg:top="15" dlg:width="60" dlg:height="8" dlg:help-text="Estandar" dlg:value="Çeçeo (EPA)" dlg:group-name="vafoptgroup" dlg:checked="true"/>
+   <dlg:radio dlg:id="zezeo" dlg:tab-index="6" dlg:left="10" dlg:top="25" dlg:width="60" dlg:height="8" dlg:help-text="zezeo" dlg:value="Zezeo" dlg:group-name="vafoptgroup"/>
+   <dlg:radio dlg:id="seseo" dlg:tab-index="7" dlg:left="10" dlg:top="35" dlg:width="60" dlg:height="8" dlg:help-text="seseo" dlg:value="Seseo" dlg:group-name="vafoptgroup"/>
+   <dlg:radio dlg:id="heheo" dlg:tab-index="8" dlg:left="10" dlg:top="45" dlg:width="60" dlg:height="8" dlg:help-text="seseo" dlg:value="Heheo" dlg:group-name="vafoptgroup"/>
+  </dlg:radiogroup>
+
+  <dlg:titledbox dlg:id="Opt2Tiled" dlg:tab-index="9" dlg:left="70" dlg:top="5" dlg:width="65" dlg:height="55">
+   <dlg:title dlg:value="Elije H J"/>
+  </dlg:titledbox>
+  <dlg:radiogroup>
+   <dlg:radio dlg:id="aspirada" dlg:tab-index="10" dlg:left="75" dlg:top="15" dlg:width="65" dlg:height="8" dlg:help-text="Aspirada [h]" dlg:value="Aspirada (EPA)" dlg:group-name="vvfoptgroup" dlg:checked="true"/>
+   <dlg:radio dlg:id="jota" dlg:tab-index="11" dlg:left="75" dlg:top="25" dlg:width="65" dlg:height="8" dlg:help-text="Usar J" dlg:value="Usar J" dlg:group-name="vvfoptgroup"/>
+  </dlg:radiogroup>
+
+  <dlg:titledbox dlg:id="Opt3Tiled" dlg:tab-index="12" dlg:left="5" dlg:top="65" dlg:width="130" dlg:height="35">
+   <dlg:title dlg:value="¿Qué quieres transcribir?"/>
+  </dlg:titledbox>
+  <dlg:radiogroup>
+   <dlg:radio dlg:id="seleccion" dlg:tab-index="13" dlg:left="10" dlg:top="75" dlg:width="80" dlg:height="8" dlg:help-text="Transcribe únicamente los párrafos que tienes seleccionado" dlg:value="Texto seleccionado" dlg:group-name="transcribeoptgroup" dlg:checked="true"/>
+   <dlg:radio dlg:id="completo" dlg:tab-index="14" dlg:left="10" dlg:top="85" dlg:width="80" dlg:height="8" dlg:help-text="Transcribe el documento completo" dlg:value="Documento completo" dlg:group-name="transcribeoptgroup"/>
+  </dlg:radiogroup>
+
+  <dlg:titledbox dlg:id="TutoTiled" dlg:tab-index="15" dlg:left="5" dlg:top="105" dlg:width="130" dlg:height="50">
+   <dlg:title dlg:value="Instrucciones"/>
+  </dlg:titledbox>
+  <dlg:text dlg:id="TutoLabel1" dlg:tab-index="16" dlg:left="8" dlg:top="115" dlg:width="130" dlg:height="10" dlg:value="Elije tus preferencias de transcripción al"/>
+  <dlg:text dlg:id="TutoLabel2" dlg:tab-index="17" dlg:left="8" dlg:top="125" dlg:width="130" dlg:height="10" dlg:value="Andalûh y si quieres aplicarlas al texto "/>
+  <dlg:text dlg:id="TutoLabel3" dlg:tab-index="18" dlg:left="8" dlg:top="135" dlg:width="130" dlg:height="10" dlg:value="que hayas seleccionado o al documento"/>
+  <dlg:text dlg:id="TutoLabel4" dlg:tab-index="19" dlg:left="8" dlg:top="145" dlg:width="130" dlg:height="10" dlg:value="completo. Más info en el siguiente link."/>
+  
+  <dlg:linklabel dlg:id="TutoLink" dlg:tab-index="20"  dlg:left="40" dlg:top="160" dlg:width="130" dlg:height="10" dlg:value="~https://andaluh.es" dlg:url="https://andaluh.es/"/>
+
+  <dlg:button dlg:id="OkBtn" dlg:tab-index="1" dlg:left="25" dlg:top="180" dlg:width="40" dlg:height="14" dlg:default="true" dlg:button-type="ok"/>
+  <dlg:button dlg:id="CancelBtn" dlg:tab-index="2" dlg:left="75" dlg:top="180" dlg:width="40" dlg:height="14" dlg:button-type="cancel"/>
+ </dlg:bulletinboard>
+</dlg:window>
