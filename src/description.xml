@@ -7,7 +7,7 @@
 	</dependencies>
 	<registration>
 		<simple-license suppress-on-update="true" accept-by="admin">
-			<license-text lang="en" xlink:href="registration/lgpl-en.txt"/>
+			<license-text lang="en" xlink:href="resources/lgpl-en.txt"/>
 		</simple-license>
 	</registration>
 	<publisher>
