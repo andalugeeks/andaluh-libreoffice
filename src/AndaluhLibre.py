@@ -4,10 +4,10 @@
 #
 # LibreOffice Extension to Transcribe spanish spelling to Andalûh (EPA).
 # Further details: https://andaluh.es
-# 
+#
 # Copyleft (c) 2021 AndaluGeeks Team
-# 
-# Authors : 
+#
+# Authors:
 #   J. Félix Ontañón <felixonta@gmail.com>
 
 import sys
@@ -18,6 +18,9 @@ from com.sun.star.task import XJobExecutor
 
 # pip3 install andaluh
 import andaluh
+
+ImplementationName = "org.openoffice.comp.pyuno.AndaluhLibre"
+ServiceName = "com.sun.star.task.Job"
 
 # Recuersively iterates over table objects
 def transcribe_table(t, vaf='ç', vvf='h'):
@@ -83,7 +86,7 @@ class AndaluhLibre(unohelper.Base, XJobExecutor):
                 par.setDataArray(tup)
 
             else:
-                pass       
+                pass
 
     # This is what the dialog triggers. From Menu or Toolbar.
     def trigger(self, args):
@@ -111,9 +114,6 @@ class AndaluhLibre(unohelper.Base, XJobExecutor):
 
         self.transcription(parenum, vaf, vvf)
 
-# Invoke implementation
+# uno implementation
 g_ImplementationHelper = unohelper.ImplementationHelper()
-
-g_ImplementationHelper.addImplementation(AndaluhLibre,
-        "org.openoffice.comp.pyuno.AndaluhLibre",
-        ("com.sun.star.task.Job",),)
+g_ImplementationHelper.addImplementation(AndaluhLibre, ImplementationName, (ServiceName,),)
