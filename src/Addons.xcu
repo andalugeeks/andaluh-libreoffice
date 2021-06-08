@@ -27,9 +27,6 @@
                                     <prop oor:name="URL" oor:type="xs:string">
                                         <value>service:org.openoffice.comp.pyuno.AndaluhLibre?execute</value>
                                     </prop>
-                                    <prop oor:name="ImageIdentifier" oor:type="xs:string">
-                                        <value>resources/AndaluhLibre</value>
-                                    </prop>
                                     <prop oor:name="Title" oor:type="xs:string">
                                         <value />
 											<value xml:lang="es">Andaluh 🇳🇬</value>
@@ -67,9 +64,6 @@
                         <node oor:name="m1" oor:op="replace">
                             <prop oor:name="URL" oor:type="xs:string">
                                 <value>private:separator</value>
-                            </prop>
-                            <prop oor:name="ImageIdentifier" oor:type="xs:string">
-                                <value>resources/AndaluhLibre</value>
                             </prop>
                         </node>
                         <node oor:name="m2" oor:op="replace">

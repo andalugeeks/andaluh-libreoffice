@@ -10,11 +10,8 @@
 #   J. Félix Ontañón <felixonta@gmail.com> 
 
 
-# Upgrade andaluh dependency from pip
-# pip3 install andaluh -t src/ --upgrade
-
-# Remove unuself files from dependency
-# rm -rf src/bin/ src/andaluh-0.2.1.dist-info/
+# Install/Upgrade andaluh dependency from pip
+pip3 install andaluh -t src/AndaluhLibre/pythonpath --upgrade
 
 # Package as oxt libreoffice extension file
 mkdir -p dist
