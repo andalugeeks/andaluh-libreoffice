@@ -4,7 +4,7 @@ An extension for LibreOffice Writer to help you transliterating español (spanis
 
 This extension has been developed with [Python-UNO bridge](http://www.openoffice.org/udk/python/python-bridge.html) and [andaluh-py](https://github.com/andalugeeks/andaluh-py) library embedded on the extension itself. No need to download any dependencies.
 
-<a href=""><img width="800" alt="andaluh-libreoffice about" src=""></a>
+<a href="https://github.com/andalugeeks/andaluh-libreoffice/blob/master/img/test.jpg?raw=true"><img width="800" alt="andaluh-libreoffice about" src="https://github.com/andalugeeks/andaluh-libreoffice/blob/master/img/test.jpg?raw=true"></a>
 
 ## Table of Contents
 
