@@ -102,17 +102,23 @@ class AndaluhLibre(unohelper.Base, XJobExecutor):
 
         # When full transcription is selected
         if dlg.completo.State:
-            parenum = self.document.Text.createEnumeration()
+            # Transcribe the document header
+            # Reference: https://forum.openoffice.org/en/forum/viewtopic.php?f=20&t=89910
+            style = self.document.StyleFamilies.getByName("PageStyles").getByName("Standard")
+            header_parenum = style.HeaderText.createEnumeration()
+            self.transcription(header_parenum, vaf, vvf)
+
+            # Transcribe the document content
+            doc_parenum = self.document.Text.createEnumeration()
+            self.transcription(doc_parenum, vaf, vvf)
 
         # Or whether to transcribe selected text only
         else:
             controller = self.document.getCurrentController()
             selection = controller.getSelection()
             xTextRange = selection.getByIndex(0)
-            text = xTextRange.getString()
             parenum = xTextRange.createEnumeration()
-
-        self.transcription(parenum, vaf, vvf)
+            self.transcription(parenum, vaf, vvf)
 
 # uno implementation
 g_ImplementationHelper = unohelper.ImplementationHelper()
