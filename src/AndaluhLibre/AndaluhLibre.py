@@ -75,7 +75,12 @@ class AndaluhLibre(unohelper.Base, XJobExecutor):
                 while textenum.hasMoreElements():
                     text = textenum.nextElement()
 
-                    if text.getString():
+                    # Footnote found! Walk through the footnote text.
+                    if text.Footnote:
+                        footnote_enum = text.Footnote.createEnumeration()
+                        self.transcription(footnote_enum, vaf, vvf)
+
+                    elif text.getString():
                         text.setString(andaluh.epa(text.getString(), vaf, vvf))
 
             # Tables
