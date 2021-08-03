@@ -102,11 +102,11 @@ class AndaluhLibre(unohelper.Base, XJobExecutor):
 
         # When full transcription is selected
         if dlg.completo.State:
-            # Transcribe the document header
+            # Transcribe the document header and footer
             # Reference: https://forum.openoffice.org/en/forum/viewtopic.php?f=20&t=89910
             style = self.document.StyleFamilies.getByName("PageStyles").getByName("Standard")
-            header_parenum = style.HeaderText.createEnumeration()
-            self.transcription(header_parenum, vaf, vvf)
+            style.HeaderText and self.transcription(style.HeaderText.createEnumeration(), vaf, vvf)
+            style.FooterText and self.transcription(style.FooterText.createEnumeration(), vaf, vvf)
 
             # Transcribe the document content
             doc_parenum = self.document.Text.createEnumeration()
