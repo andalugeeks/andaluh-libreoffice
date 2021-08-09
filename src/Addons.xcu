@@ -29,8 +29,8 @@
                                     </prop>
                                     <prop oor:name="Title" oor:type="xs:string">
                                         <value />
-											<value xml:lang="es">Andaluh 🇳🇬</value>
-											<value xml:lang="en-US">Andaluh 🇳🇬</value>
+											<value xml:lang="es">Transcribir a Andaluh (EPA)</value>
+											<value xml:lang="en-US">Translate to Andaluh (EPA)</value>
                                     </prop>                                   
                                     <prop oor:name="Target" oor:type="xs:string">
                                         <value>_self</value>
@@ -79,10 +79,13 @@
                             <prop oor:name="ControlType" oor:type="xs:string">
                                 <value>Checkbutton</value>
                             </prop>
+                            <prop oor:name="ImageIdentifier" oor:type="xs:string">
+                                <value>%origin%/resources/andaluhlibre_toolbar</value>
+                            </prop>
                             <prop oor:name="Title" oor:type="xs:string">
                                 <value/>
-								<value xml:lang="es">Andaluh 🇳🇬</value>
-								<value xml:lang="en-US">Andaluh 🇳🇬</value>
+								<value xml:lang="es">Transcribir a Andaluh (EPA)</value>
+								<value xml:lang="en-US">Translate to Andaluh (EPA)</value>
                             </prop>
                         </node>
 

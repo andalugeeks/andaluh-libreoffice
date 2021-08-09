@@ -3,7 +3,7 @@
 <dlg:window xmlns:dlg="http://openoffice.org/2000/dialog" xmlns:script="http://openoffice.org/2000/script" 
     dlg:id="TranscriptorDlg" dlg:left="99" dlg:top="81" dlg:width="140" dlg:height="200" 
     dlg:closeable="true" dlg:moveable="true"
-    dlg:help-text="Trascribir a Andalûh (EPA)" dlg:title="Trascribir a Andalûh (EPA)" 
+    dlg:help-text="Transcribir a Andaluh (EPA)" dlg:title="Transcribir a Andaluh (EPA)" 
 >
  <dlg:bulletinboard>
   <dlg:titledbox dlg:id="Opt1Tiled" dlg:tab-index="4" dlg:left="5" dlg:top="5" dlg:width="60" dlg:height="55">
